@@ -7,7 +7,8 @@
 }
 
 html {
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
+  font-size: 55%;
   box-sizing: border-box;
 }
 
@@ -170,24 +171,63 @@ main {
   display: none;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
+  .name {
+    position: relative;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .current {
+    background-color: #c7365f;
+    opacity: 0.8;
+    border-radius: 9px;
+    color: #fff;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.75s;
+  }
+
+  .player--0 .current {
+    padding: 2rem;
+    right: 1rem;
+  }
+
+  .player--1 .current {
+    left: 1rem;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: (320px)) {
   html {
     font-size: 20%;
   }
-
-.player {
-    padding: 9rem;
-    height: 60rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 0.75s;
-}
 }
 
 @media screen and (max-width: 480px) {
   html {
-    font-size: 100%;
+    font-size: 20%;
+  }
+
+  .player {
+    /* استایل‌دهی به عناصر بازیکن در صفحات با عرض کمتر از 480 پیکسل */
+  }
+
+  .current {
+    background-color: #c7365f;
+    opacity: 0.8;
+    border-radius: 9px;
+    color: #fff;
+    width: 65%;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.75s;
   }
 }
 
@@ -195,26 +235,95 @@ main {
   html {
     font-size: 30%;
   }
+  .current {
+    background-color: #c7365f;
+    opacity: 0.8;
+    border-radius: 9px;
+    color: #fff;
+    width: 65%;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.75s;
+  }
 }
 
 @media screen and (max-width: 768px) {
   html {
     font-size: 45%;
   }
+  .current {
+    background-color: #c7365f;
+    opacity: 0.8;
+    border-radius: 9px;
+    color: #fff;
+    width: 65%;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.75s;
+  }
 }
+
 @media screen and (max-width: 900px) {
   html {
     font-size: 50%;
   }
+  .current {
+    background-color: #c7365f;
+    opacity: 0.8;
+    border-radius: 9px;
+    color: #fff;
+    width: 65%;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.75s;
+  }
 }
+
 @media screen and (max-width: 1024px) {
   html {
     font-size: 50%;
   }
+
+  .current {
+    background-color: #c7365f;
+    opacity: 0.8;
+    border-radius: 9px;
+    color: #fff;
+    width: 65%;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.75s;
+  }
 }
-@media screen and (main-width: 1200px) {
+
+@media screen and (max-width: 1200px) {
   html {
     font-size: 40%;
-    /* height: 100%; */
+  }
+  .current {
+    background-color: #c7365f;
+    opacity: 0.8;
+    border-radius: 9px;
+    color: #fff;
+    width: 65%;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.75s;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+  .current {
+    background-color: #c7365f;
+    opacity: 0.8;
+    border-radius: 9px;
+    color: #fff;
+    width: 65%;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.75s;
   }
 }
