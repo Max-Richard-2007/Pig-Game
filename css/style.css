@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   height: 100vh;
   color: #333;
@@ -168,4 +168,53 @@ main {
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 20%;
+  }
+
+.player {
+    padding: 9rem;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.75s;
+}
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (main-width: 1200px) {
+  html {
+    font-size: 40%;
+    /* height: 100%; */
+  }
 }
